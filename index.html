@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="todo-app">
+        <header>
+            <h1>To-Do List</h1>
+            <button id="themeToggle">🌙 Dark Mode</button>
+        </header>
+
+        <!-- Input Section -->
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Enter a new task">
+            <select id="categorySelect">
+                <option value="Personal">Personal</option>
+                <option value="Work">Work</option>
+                <option value="Shopping">Shopping</option>
+            </select>
+            <input type="date" id="dueDate">
+            <select id="prioritySelect">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Search tasks...">
+        </div>
+
+        <!-- Task Progress -->
+        <div class="progress-container">
+            <p>Progress: <span id="progressPercentage">0</span>%</p>
+            <div class="progress-bar">
+                <div id="progressFill"></div>
+            </div>
+        </div>
+
+        <!-- Task List -->
+        <ul id="taskList" class="task-list">
+            <!-- Tasks will appear here -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

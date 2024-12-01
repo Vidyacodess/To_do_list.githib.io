@@ -1,0 +1,78 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.todo-app {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.dark-mode .todo-app {
+    background: #444;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#themeToggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.input-container, .search-container, .progress-container {
+    margin-bottom: 20px;
+}
+
+#categorySelect, #dueDate, #prioritySelect {
+    margin: 0 5px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+#progressFill {
+    background: #4caf50;
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s;
+}
+
+/* Completed Tasks */
+.task-list li.completed {
+    text-decoration: line-through;
+    color: gray;
+}
